@@ -11,8 +11,8 @@ export const router = createBrowserRouter([
     Component: DashboardLayout,
     children: [
       {
-        index:true,
-        Component: Overview
+        index: true,
+        Component: Overview,
       },
       {
         path: "call-log",
@@ -20,12 +20,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "appointment",
-        Component: Appointment
+        Component: Appointment,
       },
       {
         path: "setting",
-        Component: Setting
-      }
+        Component: Setting,
+      },
     ],
   },
 ]);
