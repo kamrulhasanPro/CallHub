@@ -11,7 +11,7 @@ const StatsCard = ({ stats }) => {
 
         {/* content */}
         <div>
-          <p className="text-sm text-[#90A1B9]">{label}</p>
+          <p className="smallText">{label}</p>
           <h4 className="text-2xl">{value}</h4>
           <p
             className={`text-sm ${growthHeigh ? "text-green-400" : "text-red-400"}`}

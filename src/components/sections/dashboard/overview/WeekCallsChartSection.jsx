@@ -14,12 +14,12 @@ const WeekCallsChartSection = () => {
 
   const totalCalls = data.reduce((pre, next) => pre + next.calls, 0);
   return (
-    <section className="bg-base-300 rounded-2xl border border-[#2B7FFF33] p-6">
+    <section className="bg-base-300 rounded-2xl border border-[#2B7FFF33] p-6 overflow-hidden">
       <div className="mb-6 flex items-center justify-between">
         {/* content */}
         <div>
           <h4 className="text-xl">Call Trends - This Week</h4>
-          <p className="text-sm text-[#90A1B9]">Total: {totalCalls} calls</p>
+          <p className="smallText">Total: {totalCalls} calls</p>
         </div>
 
         {/* sorting */}
