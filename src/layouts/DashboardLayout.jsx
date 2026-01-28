@@ -15,7 +15,7 @@ const DashboardLayout = () => {
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Navbar */}
-        <nav className="navbar bg-base-100 shadow-sm">
+        <nav className="navbar bg-base-200 shadow-sm">
           <div className="flex-1 flex items-center gap-2">
             <label
               htmlFor="my-drawer-4"
@@ -113,7 +113,7 @@ const DashboardLayout = () => {
       {/* dashboard sidebar navigation */}
       <div className="drawer-side">
         <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-        <div className="flex min-h-full flex-col items-start bg-base-200 w-60">
+        <div className="flex min-h-full flex-col items-start bg-base-200 w-60 border-r border-[#2B7FFF33]">
           {/* logo */}
           <div className="flex items-center justify-center my-4 w-full">
             <Logo />
@@ -123,7 +123,7 @@ const DashboardLayout = () => {
           <ul className="flex flex-col w-full gap-5">
             {/* List item */}
             {/* overview */}
-            <MySideLink to={"overview"} NavName={"Overview"}>
+            <MySideLink to={""} NavName={"Overview"}>
               <RxDashboard size={32} />
             </MySideLink>
 
