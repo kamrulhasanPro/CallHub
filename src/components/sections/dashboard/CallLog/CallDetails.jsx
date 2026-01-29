@@ -104,7 +104,7 @@ const CallDetails = ({ call }) => {
           {/* main conversion */}
           <div className="p-4 bg-[#1D293D80] rounded-[14px]  space-y-3">
             {transcript.map((conversion, i) => (
-              <div>
+              <div key={i}>
                 <h6
                   className={`${i % 2 === 0 ? "text-green-400" : "text-blue-400"} mb-1`}
                 >

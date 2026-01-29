@@ -30,7 +30,7 @@ const CallListSection = () => {
   }
 
   return (
-    <section className="flex gap-6">
+    <section className="flex flex-col md:flex-row gap-6">
       <div className="bg-base-300 rounded-2xl border border-[#2B7FFF33] w-full overflow-hidden">
         {/* title */}
         <div className="p-4 border-b border-[#2B7FFF33] ">
