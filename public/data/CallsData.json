@@ -10,26 +10,11 @@
     "outcome": "Quote Provided",
     "recordingUrl": "/audio/call_001.mp3",
     "transcript": [
-      {
-        "role": "AI Assistant",
-        "message": "Thank you for calling UBreakiFix! How can I help you today?"
-      },
-      {
-        "role": "Customer",
-        "message": "Hi, my iPhone 13 screen is cracked. How much would it cost to repair?"
-      },
-      {
-        "role": "AI Assistant",
-        "message": "For an iPhone 13 screen repair, our price is $199. This includes parts, labor, and a 90-day warranty."
-      },
-      {
-        "role": "Customer",
-        "message": "Yes, please! When are you available?"
-      },
-      {
-        "role": "AI Assistant",
-        "message": "I have availability today at 2:00 PM or tomorrow at 10:00 AM."
-      }
+      { "role": "AI Assistant", "message": "Thank you for calling UBreakiFix! How can I help you today?" },
+      { "role": "Customer", "message": "Hi, my iPhone 13 screen is cracked. How much would it cost to repair?" },
+      { "role": "AI Assistant", "message": "The price is $199 including parts, labor, and a 90-day warranty." },
+      { "role": "Customer", "message": "That sounds good. When can I come in?" },
+      { "role": "AI Assistant", "message": "We have availability today at 2 PM or tomorrow at 10 AM." }
     ]
   },
 
@@ -43,7 +28,13 @@
     "date": "2025-12-16T09:41:00Z",
     "outcome": "Escalated to technician",
     "recordingUrl": "/audio/call_002.mp3",
-    "transcript": []
+    "transcript": [
+      { "role": "AI Assistant", "message": "Thank you for calling UBreakiFix. How can I assist you?" },
+      { "role": "Customer", "message": "My phone keeps restarting automatically." },
+      { "role": "AI Assistant", "message": "This looks like a software issue. Let me transfer you to a technician." },
+      { "role": "Customer", "message": "Okay, thank you." },
+      { "role": "AI Assistant", "message": "You are being transferred now." }
+    ]
   },
 
   {
@@ -56,7 +47,13 @@
     "date": "2025-12-15T08:30:00Z",
     "outcome": "Appointment Booked",
     "recordingUrl": "/audio/call_003.mp3",
-    "transcript": []
+    "transcript": [
+      { "role": "AI Assistant", "message": "Hello! This is UBreakiFix following up on your battery issue." },
+      { "role": "Customer", "message": "Yes, my battery drains very fast." },
+      { "role": "AI Assistant", "message": "We recommend a battery replacement. Would you like to book an appointment?" },
+      { "role": "Customer", "message": "Yes, please book it for tomorrow." },
+      { "role": "AI Assistant", "message": "Your appointment is booked for tomorrow at 11 AM." }
+    ]
   },
 
   {
@@ -69,6 +66,10 @@
     "date": "2025-12-16T10:10:00Z",
     "outcome": "Call Dropped",
     "recordingUrl": null,
-    "transcript": []
+    "transcript": [
+      { "role": "AI Assistant", "message": "Thank you for calling UBreakiFix." },
+      { "role": "Customer", "message": "Hello?" },
+      { "role": "System", "message": "Call disconnected due to network issue." }
+    ]
   }
 ]

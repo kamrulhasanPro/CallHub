@@ -4,7 +4,7 @@ import CallListSection from "../../components/sections/dashboard/CallLog/CallLis
 
 const CallLog = () => {
   return (
-    <div>
+    <div className="space-y-6">
       <SearchAndFiltering />
       <CallListSection />
     </div>

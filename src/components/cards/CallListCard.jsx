@@ -34,7 +34,7 @@ const CallListCard = ({ call, clickCall, setClickCall }) => {
   return (
     <div
       onClick={() => setClickCall(id)}
-      className={`p-4 ${clickCall === id && "border-b-3 border-[#2B7FFF]"}`}
+      className={`p-4 border-b-2 duration-150 border-[#2B7FFF1A] ${clickCall === id && "border-b-3 border-[#2B7FFF]"} cursor-pointer`}
     >
       {/* number & date & type */}
       <div className="flex items-start gap-2 justify-between">

@@ -1,7 +1,17 @@
 import { FaRegPlayCircle } from "react-icons/fa";
+import { GrNotes } from "react-icons/gr";
 
 const CallDetails = ({ call }) => {
-  const { id, phone, issueType, status, callType, duration, date } = call || {};
+  const {
+    id,
+    phone,
+    issueType,
+    status,
+    callType,
+    duration,
+    date,
+    transcript = [],
+  } = call || {};
 
   //   dynamic outcome
   const outcomeMap = {
@@ -77,14 +87,33 @@ const CallDetails = ({ call }) => {
           </div>
         </div>
 
-{/* audio play button */}
-        <button className="border border-[#AD46FF4D] flex items-center justify-center w-full bg-[#AD46FF33] text-[#C27AFF] p-3 rounded-[14px] gap-1">
-          <FaRegPlayCircle size={26}/>
+        {/* audio play button */}
+        <button className="border border-[#AD46FF4D] flex items-center justify-center w-full bg-[#AD46FF33] text-[#C27AFF] p-3 rounded-[14px] gap-1 cursor-pointer">
+          <FaRegPlayCircle size={26} />
           <span>Play Audio Recording</span>
         </button>
 
-        <div>
+        {/* transcript */}
+        <div className="">
+          {/* title */}
+          <div className="flex items-center gap-2 mb-3">
+            <GrNotes stroke="#51A2FF" />
+            <span>Conversation Transcript</span>
+          </div>
 
+          {/* main conversion */}
+          <div className="p-4 bg-[#1D293D80] rounded-[14px]  space-y-3">
+            {transcript.map((conversion, i) => (
+              <div>
+                <h6
+                  className={`${i % 2 === 0 ? "text-green-400" : "text-blue-400"} mb-1`}
+                >
+                  {conversion?.role}
+                </h6>
+                <p>{conversion?.message}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
