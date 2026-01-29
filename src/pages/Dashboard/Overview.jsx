@@ -14,7 +14,7 @@ const Overview = () => {
       <WeekCallsChartSection />
 
       {/* recentActivity & Top repair */}
-      <section className="flex gap-6">
+      <section className="flex flex-col sm:flex-row gap-6">
         <RecentActivity />
         <RepairRequest />
       </section>
