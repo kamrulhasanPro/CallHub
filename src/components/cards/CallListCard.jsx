@@ -6,7 +6,7 @@ import { MdOutlineTaskAlt } from "react-icons/md";
 import { RiErrorWarningLine } from "react-icons/ri";
 
 const CallListCard = ({ call, clickCall, setClickCall }) => {
-  const { id, phone, issueType, status, callType, duration, date } = call || {};
+  const { id, phone, issueType, status, duration, date } = call || {};
   const dateFormat = new Date(date);
 
   // dynamic outcome

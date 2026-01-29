@@ -3,11 +3,10 @@ import { GrNotes } from "react-icons/gr";
 
 const CallDetails = ({ call }) => {
   const {
-    id,
     phone,
     issueType,
     status,
-    callType,
+
     duration,
     date,
     transcript = [],

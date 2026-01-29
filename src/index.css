@@ -22,3 +22,7 @@
 .smallText{
   @apply text-sm text-[#90A1B9]
 }
+
+.tbData {
+  @apply p-4 border-b border-gray-100
+}

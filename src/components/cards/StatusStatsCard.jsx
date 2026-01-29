@@ -7,7 +7,7 @@ const StatusStatsCard = ({ stat }) => {
   return (
     <div className="border border-[#2B7FFF33] rounded-2xl bg-base-300 p-6 space-y-2">
       {/* icon & title */}
-      <div className className="flex items-center gap-3">
+      <div className="flex items-center gap-3">
         <span style={{ color: color, fontSize: "26px" }}>{icon}</span>
         {title}
       </div>
