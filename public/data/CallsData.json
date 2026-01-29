@@ -6,8 +6,33 @@
     "status": "AI Resolved",
     "callType": "Inbound",
     "duration": 323,
-    "date": "2025-12-16T09:42:00Z"
+    "date": "2025-12-16T09:42:00Z",
+    "outcome": "Quote Provided",
+    "recordingUrl": "/audio/call_001.mp3",
+    "transcript": [
+      {
+        "role": "AI Assistant",
+        "message": "Thank you for calling UBreakiFix! How can I help you today?"
+      },
+      {
+        "role": "Customer",
+        "message": "Hi, my iPhone 13 screen is cracked. How much would it cost to repair?"
+      },
+      {
+        "role": "AI Assistant",
+        "message": "For an iPhone 13 screen repair, our price is $199. This includes parts, labor, and a 90-day warranty."
+      },
+      {
+        "role": "Customer",
+        "message": "Yes, please! When are you available?"
+      },
+      {
+        "role": "AI Assistant",
+        "message": "I have availability today at 2:00 PM or tomorrow at 10:00 AM."
+      }
+    ]
   },
+
   {
     "id": "call_002",
     "phone": "+1 (555) 345-6789",
@@ -15,8 +40,12 @@
     "status": "Warm Transfer",
     "callType": "Inbound",
     "duration": 315,
-    "date": "2025-12-16T09:41:00Z"
+    "date": "2025-12-16T09:41:00Z",
+    "outcome": "Escalated to technician",
+    "recordingUrl": "/audio/call_002.mp3",
+    "transcript": []
   },
+
   {
     "id": "call_003",
     "phone": "+1 (555) 999-1111",
@@ -24,8 +53,12 @@
     "status": "Appointment",
     "callType": "Outbound",
     "duration": 210,
-    "date": "2025-12-15T08:30:00Z"
+    "date": "2025-12-15T08:30:00Z",
+    "outcome": "Appointment Booked",
+    "recordingUrl": "/audio/call_003.mp3",
+    "transcript": []
   },
+
   {
     "id": "call_004",
     "phone": "+1 (555) 777-2222",
@@ -33,6 +66,9 @@
     "status": "Dropped",
     "callType": "Inbound",
     "duration": 20,
-    "date": "2025-12-16T10:10:00Z"
+    "date": "2025-12-16T10:10:00Z",
+    "outcome": "Call Dropped",
+    "recordingUrl": null,
+    "transcript": []
   }
 ]

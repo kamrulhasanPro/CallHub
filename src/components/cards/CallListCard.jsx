@@ -8,12 +8,15 @@ import { RiErrorWarningLine } from "react-icons/ri";
 const CallListCard = ({ call, clickCall, setClickCall }) => {
   const { id, phone, issueType, status, callType, duration, date } = call || {};
   const dateFormat = new Date(date);
+
+  // dynamic outcome
   const outcomeMap = {
     "AI Resolved": "Quote Provided",
     "Warm Transfer": "Escalated to technician",
     Appointment: "Appointment Booked",
     Dropped: "Call Dropped",
   };
+
   const statusColor = {
     "AI Resolved": "text-green-400 bg-green-400/10 border border-green-400",
     "Warm Transfer":
@@ -55,8 +58,7 @@ const CallListCard = ({ call, clickCall, setClickCall }) => {
 
         {/* type */}
         <div
-          className={`py-1 px-2.5 border border-[#2B7FFF4D]  rounded-[10px] text-[#51A2FF] w-fit ${statusColor[status]}`}
-          // style={statusColor[status]}
+          className={`py-1 px-2.5 border border-[#2B7FFF4D]  rounded-[10px] text-[#51A2FF] w-fit ${statusColor[status]} text-nowrap`}
         >
           {status}
         </div>
