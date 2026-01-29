@@ -3,7 +3,7 @@ import React from "react";
 const SearchAndFiltering = () => {
   return (
     <section className="flex flex-col sm:flex-row gap-6 items-center justify-between">
-      <label className="input bg-base-300 rounded-[14px] border border-[#2B7FFF33] outline-none pl-5 w-full">
+      <label className="input bg-base-200 rounded-[14px] border border-[#2B7FFF33] outline-none pl-5 w-full">
         <svg
           className="h-[1em] opacity-50"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const SearchAndFiltering = () => {
         {/* type filter */}
         <select
           defaultValue="Pick a color"
-          className="select w-fit rounded-xl bg-base-300  border border-[#2B7FFF33] outline-none [&>*]:text-nowrap"
+          className="select w-fit rounded-xl bg-base-200  border border-[#2B7FFF33] outline-none [&>*]:text-nowrap"
         >
           <option defaultChecked>All Type</option>
           <option>This Month</option>
@@ -42,7 +42,7 @@ const SearchAndFiltering = () => {
         {/* issue filter */}
         <select
           defaultValue="Pick a color"
-          className="select w-fit rounded-xl bg-base-300  border border-[#2B7FFF33] outline-none [&>*]:text-nowrap"
+          className="select w-fit rounded-xl bg-base-200  border border-[#2B7FFF33] outline-none [&>*]:text-nowrap"
         >
           <option defaultChecked>All Issue</option>
           <option>Screen Issue</option>
@@ -53,7 +53,7 @@ const SearchAndFiltering = () => {
         {/* date filter */}
         <select
           defaultValue="Pick a color"
-          className="select w-fit rounded-xl bg-base-300  border border-[#2B7FFF33] outline-none [&>*]:text-nowrap"
+          className="select w-fit rounded-xl bg-base-200  border border-[#2B7FFF33] outline-none [&>*]:text-nowrap"
         >
           <option defaultChecked>Today</option>
           <option>Last Week</option>

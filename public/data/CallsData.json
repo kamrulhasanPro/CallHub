@@ -1,0 +1,38 @@
+[
+  {
+    "id": "call_001",
+    "phone": "+1 (555) 345-6789",
+    "issueType": "Screen",
+    "status": "AI Resolved",
+    "callType": "Inbound",
+    "duration": 323,
+    "date": "2025-12-16T09:42:00Z"
+  },
+  {
+    "id": "call_002",
+    "phone": "+1 (555) 345-6789",
+    "issueType": "Software",
+    "status": "Warm Transfer",
+    "callType": "Inbound",
+    "duration": 315,
+    "date": "2025-12-16T09:41:00Z"
+  },
+  {
+    "id": "call_003",
+    "phone": "+1 (555) 999-1111",
+    "issueType": "Battery",
+    "status": "Appointment",
+    "callType": "Outbound",
+    "duration": 210,
+    "date": "2025-12-15T08:30:00Z"
+  },
+  {
+    "id": "call_004",
+    "phone": "+1 (555) 777-2222",
+    "issueType": "Unknown",
+    "status": "Dropped",
+    "callType": "Inbound",
+    "duration": 20,
+    "date": "2025-12-16T10:10:00Z"
+  }
+]
