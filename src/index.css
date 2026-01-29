@@ -12,7 +12,7 @@
 @plugin "daisyui/theme" {
   name: "dark";
   default: true;
-  --color-primary: blue;
+  --color-primary: #0F62FE;
   --color-secondary: teal;
   --color-base-100: #162456;
   --color-base-200: #111B3C;
