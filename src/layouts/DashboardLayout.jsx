@@ -23,7 +23,7 @@ const DashboardLayout = () => {
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Navbar */}
-        <nav className="navbar bg-base-200 shadow-sm sticky top-0 z-50">
+        <nav className="navbar bg-base-200 shadow-sm sticky top-0 z-40">
           <div className="flex-1 flex items-center gap-2">
             <label
               htmlFor="my-drawer-4"
@@ -118,9 +118,9 @@ const DashboardLayout = () => {
       </div>
 
       {/* dashboard sidebar navigation */}
-      <div className="drawer-side">
+      <div className="drawer-side z-50">
         <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-        <div className="flex min-h-full flex-col items-start bg-base-200 w-60 border-r border-[#2B7FFF33]">
+        <div className="flex min-h-full flex-col items-start bg-base-200 w-60 border-r border-[#2B7FFF33] ">
           {/* logo */}
           <div className="flex items-center justify-center my-4 w-full">
             <Logo />
