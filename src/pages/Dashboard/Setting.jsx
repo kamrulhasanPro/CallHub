@@ -3,7 +3,7 @@ import ProfileSection from "../../components/sections/dashboard/Setting/ProfileS
 
 const Setting = () => {
   const defaultStyle =
-    "tab  checked:text-[#87A2FF] hover:text-[#87A2FF] text-2xl";
+    "tab  checked:text-[#87A2FF] hover:text-[#87A2FF] text-2xl pl-0 before:left-0 pr-6 ";
   return (
     <>
       <div className="tabs tabs-border">
@@ -11,7 +11,7 @@ const Setting = () => {
         <input
           type="radio"
           name="my_tabs_2"
-          className={`${defaultStyle} pl-0 before:left-0`}
+          className={`${defaultStyle}`}
           aria-label="Profile"
           defaultChecked
         />
