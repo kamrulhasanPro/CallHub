@@ -1,4 +1,5 @@
 import React, { useReducer, useState } from "react";
+import toast from "react-hot-toast";
 
 const ProfileSection = () => {
   const [editMode, setEditMode] = useState(false);
@@ -96,9 +97,10 @@ export const EditSection = ({ setEditMode, state, dispatch }) => {
       storeName: form.storeName.value,
       storeAddress: form.storeAddress.value,
     };
-    
+
     dispatch({ type: "SAVE", payload: updateUser });
     setEditMode(false);
+    toast.success("Profile updated!")
   };
   return (
     <form
