@@ -5,7 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const BookingList = () => {
   const [bookingData, setBookingData] = useState([]);
   const initialPagination = {
-    page: 1,
+    page: 0,
     limit: 5,
     totalPage: 0,
   };
@@ -104,7 +104,7 @@ const BookingList = () => {
           {[...Array(state?.totalPage)].map((_, i) => (
             <li
               onClick={() => dispatch({ type: "SET", payload: i })}
-              className={`w-10 h-10 text-primary flex items-center justify-center text-semibold ${state?.page === i && "bg-[#A6C8FF] text-base-200"}`}
+              className={`w-10 h-10 text-primary flex items-center justify-center text-semibold cursor-pointer ${state?.page === i && "bg-[#A6C8FF] text-base-200"}`}
             >
               {i + 1}
             </li>
