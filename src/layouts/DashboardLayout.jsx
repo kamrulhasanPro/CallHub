@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router";
+import { Link, NavLink, Outlet, useLocation } from "react-router";
 import MySideLink from "../components/share/MySideLink";
 import { IoCallOutline, IoSettingsOutline } from "react-icons/io5";
 import { BsCalendar2Date } from "react-icons/bs";
@@ -10,6 +10,14 @@ import { MdOutlineLogout } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa";
 
 const DashboardLayout = () => {
+  const { pathname } = useLocation();
+  const dynamicTitle = {
+    "/": "Dashboard Overview",
+    "/call-log": "Call Logs & History",
+    "/appointment": "Appointments",
+    "/setting": "Settings",
+  };
+
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -41,7 +49,7 @@ const DashboardLayout = () => {
               </svg>
             </label>
 
-            <p className="text-xl">Dashboard</p>
+            <p className="text-xl">{dynamicTitle[pathname]}</p>
           </div>
           <div className="flex-none">
             <div className="dropdown dropdown-end">
@@ -57,15 +65,20 @@ const DashboardLayout = () => {
               </div>
               <div
                 tabIndex={0}
-                className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
+                className="card card-compact dropdown-content bg-base-200 z-1 mt-3 w-52 shadow"
               >
-                <div className="card-body">
-                  <span className="text-lg font-bold">8 Items</span>
-                  <span className="text-info">Subtotal: $999</span>
-                  <div className="card-actions">
-                    <button className="btn btn-primary btn-block">
-                      View cart
-                    </button>
+                <div className="card-body p-2">
+                  <div className="bg-base-300 px-2 py-1 rounded-sm">
+                    <p>AI Assist run a called</p>
+                    <p className="smallText">now</p>
+                  </div>
+                  <div className="bg-base-300 px-2 py-1 rounded-sm">
+                    <p>System Faced a problem</p>
+                    <p className="smallText">2min ago</p>
+                  </div>
+                  <div className="bg-base-300 px-2 py-1 rounded-sm">
+                    <p>Today Started CallHub</p>
+                    <p className="smallText">5min ago</p>
                   </div>
                 </div>
               </div>
@@ -85,18 +98,12 @@ const DashboardLayout = () => {
               </div>
               <ul
                 tabIndex="-1"
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
+                  <Link to="setting">Settings</Link>
                 </li>
-                <li>
-                  <a>Settings</a>
-                </li>
-                <li>
+                <li className="text-red-400">
                   <a>Logout</a>
                 </li>
               </ul>
